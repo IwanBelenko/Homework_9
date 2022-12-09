@@ -1,12 +1,5 @@
 ﻿//  Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от N до 1. Выполнить с помощью рекурсии
 /*
-int n = InputInt("Please enter a positive number: ");
-int m = 1;
-if (n < 1)
-{
-    Console.WriteLine("Incorrect number!");
-}
-Console.WriteLine(NaturalNumber(n, m));
 
 int InputInt(string output)
 {
@@ -23,14 +16,18 @@ int NaturalNumber(int n, int m)
     return m;
 }
 
+int n = InputInt("Please enter a positive number: ");
+int m = 1;
+if (n < 1)
+{
+    Console.WriteLine("Incorrect number!");
+}
+
+Console.WriteLine(NaturalNumber(n, m));
+
 
 
 //Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N
-
-int m = InputInt("Input M: ");
-int n = InputInt("Input N: ");
-
-Console.WriteLine($"Sum of elements from {m} to {n} = {CountNaturalSum(m, n)}");
 
 int CountNaturalSum(int m, int n)
 {
@@ -44,6 +41,12 @@ int InputInt(string output)
     Console.Write(output);
     return int.Parse(Console.ReadLine());
 }
+
+int m = InputInt("Input M: ");
+int n = InputInt("Input N: ");
+
+Console.WriteLine($"Sum of elements from {m} to {n} = {CountNaturalSum(m, n)}");
+
 */
 
 // Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n
